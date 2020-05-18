@@ -34,14 +34,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				
 				<cloudHubDeployment>
+				 <uri>https://anypoint.mulesoft.com/</uri>
+				 <muleVersion>4.3.0</muleVersion>
 				<username>razor007</username>
+				<password>Python8100@</password>
+				<applicationName>worldtimezone-service</applicationName>
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<applicationName>worldtimezone-service</applicationName>
-				<password>Python8100@</password>
-				<muleVersion>4.3.0</muleVersion>
+				
+				
+				
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>
@@ -87,6 +92,11 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+        
+
+
+
+        
     </pluginRepositories>
 
 </project>
